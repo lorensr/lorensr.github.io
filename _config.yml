@@ -1,0 +1,4 @@
+name: "Loren's blog"
+markdown: redcarpet
+pygments: true
+permalink: /:title.html
