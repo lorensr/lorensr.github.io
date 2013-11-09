@@ -7,7 +7,7 @@ Google Chrome just came out with an API for the omnibox (aka address bar). After
 
 [Quick Options](https://chrome.google.com/webstore/detail/pnlefdfohlfcepdipnoppglhjhlofnhl)
 
-It opens the options page of an extension or app from the address bar. Type 'opt', a space or tab, the name of the extension or app, and return. If you enter a second space or enter an extension/app that does not have an options page, it opens the extension management page (chrome://extensions).
+It opens the options page of an extension or app from the address bar. Type 'opt', a space or tab, the name of the extension or app, and enter. If you enter a second space or enter an extension/app that does not have an options page, it opens the extension management page (chrome://extensions).
 
 This is my first time doing much with Javascript, and I like it! Certainly not as much as Ruby, but definitely more than some other languages. I don't like CamelCase as much, but it's not the end of the world :-). I will need to sit down and read through a good book on the language before I do too much more with it. Resorting to Google every other line for syntax or function names is suboptimal.
 
