@@ -6,7 +6,7 @@ How to reach all your Facebook friends in an effective yet unobtrusive manner is
 
 I wanted to find a way to send a short individual message to each of my Facebook friends in order to promote my [Kickstarter campaign](http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo) for a healthy mayonnaise. I started with Facebook's Chat API, and tried to use XMPP libraries in Ruby and Javascript to automate individual chat messages to my whole Facebook contact list. While it's definitely possible, I was unable to get any of the libraries to work without modification, which I did not want to take the time to do. It next occurred to me that while you can't use the Facebook API to retrieve the email addresses of your friends, you can use it to retrieve the usernames of your friends, and Facebook recently added support for sending messages through email, using the address [username]@facebook.com. So I wrote a short program that connected to the API, retrieved a list of usernames, and added "@facebook.com" to each. You can then paste the list into the bcc field of an email, and your email will appear as a direct individual message to each of your friends on Facebook. For full instructions, see the [code repository](https://github.com/lorensr/facebook-emails). This is my first package published to npm, and it is a pleasantly simple process.
 
-One word of warning: bothering people can cause them to defriend you. I lost 72 friends to Payo:
+One word of warning: bothering people can cause them to defriend you. I lost 72 friends to [Payo](http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo):
 
 ```
 $ wc -l before after
