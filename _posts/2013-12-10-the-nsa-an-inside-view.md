@@ -61,7 +61,7 @@ I do believe that the safeguards against unauthorized data retrieval by Agency e
 
 As to why I resigned – I wanted to work more on [personal coding projects](http://www.getferro.com) and start a company. You can help fund my food startup's first product, the most healthy mayonnaise ever mass-produced, [on Kickstarter](http://kck.st/1jF3zW8).
 
-Discussion on [Hacker News](TODO). Follow me at [@lorendsr](https://twitter.com/lorendsr).
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=6881831). Follow me at [@lorendsr](https://twitter.com/lorendsr).
 
 <div id='star'>* I am not permitted to say why this is the case, but it is true.</div>
 
