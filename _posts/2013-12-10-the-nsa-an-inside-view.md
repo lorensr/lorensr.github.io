@@ -5,9 +5,6 @@ title: "The NSA: An Inside View"
 
 In which I relate my experience as an NSA employee and impart my thoughts on the policies in place, my former coworkers, and the current cyber war. 
 
-_This essay was deemed UNCLASSIFIED and approved for public release by the NSA's office of Pre-Publication Review on 11/21/2013 (PP 14-0081)._
-
-<br />
 <br />
 
 I am an American patriot. Many impressions may come to mind at that word, “patriot”: perhaps that I am a Republican, that I don’t care about people outside the US, or that I am afraid of them. In my case, none of these conceptions apply. Patriotism to me simply means that I care about the US and its future. I hope my story gives you further information and perspective on the NSA's activities. 
@@ -68,6 +65,8 @@ Discussion on [Hacker News](https://news.ycombinator.com/item?id=6881831). Follo
 Fix typos or grammatical errors by proposing edits on [Github](https://github.com/lorensr/lorensr.github.io/blob/master/_posts/2013-12-10-the-nsa-an-inside-view.md).
 
 <br />
+
+_This essay was deemed UNCLASSIFIED and approved for public release by the NSA's office of Pre-Publication Review on 11/21/2013 (PP 14-0081)._
 
 _Note: When I make a company that stores private user data, I will do all I can to make sure that no party, including the US government, can access that data without permission. Since the company will be incorporated in the US, the only permission that will be given is what the company is legally required to give, which is permission to the USG pursuant to court orders. I would also notify the users that their data was accessed, if it was legal to do so._
 
