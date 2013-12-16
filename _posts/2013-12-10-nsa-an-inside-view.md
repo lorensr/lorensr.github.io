@@ -64,7 +64,7 @@ Discussion on [Hacker News](https://news.ycombinator.com/item?id=6910687). Follo
 
 <div id='star'>* I am not permitted to say why this is the case, but it is true.</div>
 
-Fix typos or grammatical errors by proposing edits on [Github](https://github.com/lorensr/lorensr.github.io/blob/master/_posts/2013-12-10-the-nsa-an-inside-view.md).
+Fix typos or grammatical errors by proposing edits on [Github](https://github.com/lorensr/lorensr.github.io/blob/master/_posts/2013-12-10-nsa-an-inside-view.md).
 
 <br />
 
