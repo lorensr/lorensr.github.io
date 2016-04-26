@@ -1,0 +1,284 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <meta name="description" content="Slava Kim. Software Engineer in San Francisco. Resume.">
+     <link rel="author" href="https://plus.google.com/+SlavaKim"/>
+     <meta name="twitter:image" content="https://slv.io/img/head.png">
+
+     <title>Slava Kim - Resume</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic {
+          max-height: 260px; max-width: 200px;
+          border: 10px solid white;
+          -webkit-box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          -moz-box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          transform: rotate(-3deg);
+          box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          float: right; margin: -30px 0 0 0;
+        }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; margin-bottom: 50px; height: 15px; }
+        dd + dd { margin-top: 20px; }
+        dl img {
+          float: right;
+          max-width: 100px;
+          max-height: 100px;
+          margin: 20px;
+        }
+        .topcoder { font-weight: bold; color: #DDCC00; }
+        .codeforces { font-weight: bold; color: #a0a; }
+     </style>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46840399-1', 'slv.io');
+ga('send', 'pageview');
+     </script>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <img src="img/head.png" alt="Photo" id="pic" />
+        <div id="contact-info" class="vcard">
+            <h1 class="fn">Slava Kim</h1>
+            <p>
+              {{> icon name="envelope"}}: <a href="mailto:imslavko+resume@gmail.com">imslavko@gmail.com</a> <br/>
+              {{> icon name="github"}}: <a href="https://github.com/Slava">Slava</a> <br />
+              {{> icon name="twitter"}}: <a href="https://twitter.com/imslavko">@imslavko</a> <br />
+              {{> icon name="home"}}: <a href="http://devblog.me">Homepage</a> <br />
+            </p>
+        </div>
+        <div id="objective">
+            <p>
+I am a professional software developer, based in San Francisco. While being a
+high school student I won multiple awards in world-class programming
+competitions. I worked in a couple of startups fresh out of school. I
+developed and contributed to a top-10 most-starred project on GitHub.
+            </p>
+        </div>
+        <div class="clear"></div>
+        <dl>
+          {{#section id="work" name="Work Experience"}}
+            {{#subsection name="Meteor Development Group" extra="San Francisco, CA - 2013-2015" icon="briefcase"}}
+[![Meteor](/img/meteor-logo.png)](https://meteor.com)
+Core Developer. Engineer #5 (employee #9).
+Worked on the main open-source product (Meteor framework) as well as the early
+stages of the commercial hosting software (Galaxy).
+
+Worked on the data synchronization from databases
+([LiveQuery][LiveQuery]), contributed to the front-end framework
+[Blaze][Blaze]. Led the development of [integration][mobile] with
+Apache Cordova, the project allowing Meteor developers to wrap their
+apps into Android and iOS shells in a single command. Shipped the
+[Windows port][windows].  Worked on the [project build tool][Isobuild]
+performance, resulting into orders of magnitude improvements.
+
+[LiveQuery]: https://www.meteor.com/livequery
+[Blaze]: https://www.meteor.com/blaze
+[Isobuild]: https://www.meteor.com/isobuild
+[mobile]: http://info.meteor.com/blog/meteor-092-ios-android-mobile-apps-phonegap-cordova
+[windows]: http://info.meteor.com/blog/meteor-11-microsoft-windows-mongodb-30
+
+Participated in the product discussions. Submitted and worked on multiple
+technical design proposals. Worked with, supported and communicated to the
+development community around the framework. (Examples: [1][1], [2][2], [3][3]).
+
+[1]: https://meteor.hackpad.com/Blaze-lexical-scope-and-template-arguments-fZP806qG6xQ
+[2]: https://meteor.hackpad.com/Proposal-queues-based-build-tool-kbqhWoYYfKR
+[3]: https://meteor.hackpad.com/Proposal-New-phases-for-the-build-process-KQ8jqchouGs
+
+Represented the company on events. Gave various technical talks on meetups and
+conferences. [Details](#talks).
+
+Gained expertise in: JavaScript, node.js, MongoDB, Apache Cordova.
+            {{/subsection}}
+            {{#subsection name="Collections Labs" extra="Mountain View, CA - 2012-2013" icon="briefcase"}}
+[![Collections](/img/collections-logo.png)](https://www.crunchbase.com/organization/collections)
+
+A junior software engineer in a seed stage startup.
+
+Developed the main product for Mac OS X in Objective-C. Also developed a Windows
+application (prototype in C#, final product in JS/HTML).
+
+Press coverage: [PandoDaily][PD], [TechCrunch][TC], [TheNextWeb][TNW].
+
+[PD]: https://pando.com/2012/12/14/yc-grad-collections-me-is-remaking-the-most-basic-part-of-the-os-the-finder/
+[TC]: http://techcrunch.com/2012/07/24/collections-for-mac-instagram-google-drive/
+[TNW]: http://thenextweb.com/apps/2012/08/17/y-combinator-backed-collections-me-syncs-facebook-photos-instagram-google-docs-one-mac-app/
+            {{/subsection}}
+          {{/section}}
+
+          {{#section id="education" name="Education"}}
+            {{#subsection icon="university" name="Massachusetts Institute of Technology" extra="Boston, MA - 2015-2019"}}
+[![MIT logo](img/mit-logo.png)](http://www.mit.edu/)
+
+In 2012 I took three years after high school to work in Silicon Valley startups.
+In 2015 I got admitted to MIT undergraduate program, Course 6.
+            {{/subsection}}
+            {{#subsection icon="graduation-cap" name="Kazakh-Turkish Lyceum" extra="Karaganda, Kazakhstan - 2007-2012"}}
+![Katev logo](img/katev-logo.png)
+
+In this boys-only boarding school on the edge of my hometown I
+picked up programming, started participating in programming
+competitions and have led two summers of coding camps for younger
+students.
+            {{/subsection}}
+          {{/section}}
+
+          {{#section id="skills" name="Skills and Interests"}}
+            {{#subsection name="Development Tools" icon="terminal"}}
+I worked on web-development frameworks. Contributed to the design of dynamic
+templating language. Worked on a system analyzing MongoDB queries, allowing to
+reduce the load on the database looking for real-time data notifications.
+
+My side projects include: code assist tooling for text-editors, structured
+queries parsers, toy programming languages.
+            {{/subsection}}
+            {{#subsection name="Code Analysis" icon="code"}}
+Have learned OCaml and the theory of compilers from Stanford's [Coursera class
+by Alex Aiken](https://www.coursera.org/course/compilers).
+
+Developed a simple Lisp interpreter. Built a compiler for a toy object-oriented
+programming language (Decaf, part of the Stanford class) and code assist tooling
+for a JavaScript framework.
+            {{/subsection}}
+            {{#subsection name="Distributed Systems" icon="sitemap" extra="interest"}}
+My experience in Distributed Systems is limited but I am eager to learn more and
+get my hands dirty.
+
+Contributed to Galaxy, Meteor's distributed highly available hosting platform.
+
+Have [taken](http://devblog.me/systems-class) MIT's 6.033 online, learned and
+read about [different
+things](http://web.mit.edu/6.033/2014/wwwdocs/schedule.shtml).  {{/subsection}}
+          {{/section}}
+
+          {{#section id="opensource" name="Open Source Software"}}
+            {{#subsection name="meteor/meteor" icon="github" extra="26 260" extraIcon="star"}}
+Being a Core Developer employed by Meteor Development Group, contributed more
+than 1300 patches (currently a top 3 contributor). Shipped major features.
+Maintained older projects. Reviewed submitted pull requests. Managed public
+issue tracker. Worked with the community.
+
+All activity on the issue tracker:
+[search on GitHub](https://github.com/meteor/meteor/issues?utf8=%E2%9C%93&q=commenter%3ASlava).
+
+[Meteor](https://github.com/meteor/meteor) is GitHub's top 10 most popular project of all time.
+            {{/subsection}}
+            {{#subsection name="slava/tern-meteor" icon="github" extra="258" extraIcon="star"}}
+#### [Tern for Meteor](https://github.com/Slava/tern-meteor)
+
+A plugin for text-editors such as Vim, Emacs, Sublime Text and others. This
+plugin provides JavaScript code intellegence tools specific to the Meteor
+framework and its APIs.
+
+#### [Meteor Autocomplete for Sublime](https://github.com/Slava/tern-meteor-sublime)
+
+A Sublime-Text package. Based on the Tern for Meteor, provides code
+intellegence, autocompletion of 3rd party packages, client/server autocompletion
+separation depending on the context. Other features, such as "jump to
+definition" or "go to documentation".
+            {{/subsection}}
+            {{#subsection name="slava/meteor-rethinkdb" icon="github" extra="143" extraIcon="star"}}
+A Meteor integration with [RethinkDB](http://rethinkdb.com), a NoSQL database
+that positions itself as an "open-source database for realtime web".
+
+The integration included an integration of a client-side cache, DDP RPC methods,
+research on the latency compensation options and more.
+
+Available on [GitHub](https://github.com/slava/meteor-rethinkdb).
+            {{/subsection}}
+            {{#subsection name="slava/meteor-gmail" icon="github" extra="42" extraIcon="star"}}
+A Meteor smart package that utilizes GMail API to poll data and provide soft
+real-time notifications when the set of emails matching the query changes.
+
+Includes a parser for the GMail query language to parse messages. An example of
+a query:
+
+`from:me to:(bob OR bob@corp.com) -kittens`.
+            {{/subsection}}
+          {{/section}}
+
+          {{#section id="competitions" name="Competitive Programming"}}
+            {{#subsection name="International Olympiad in Infromatics" extra="2011-2012" icon="trophy"}}
+[![IOI logo](/img/ioi-logo.png)](http://www.ioinformatics.org/)
+
+IOI is an annual algorithmic programming competition for high school students.
+More information at the [Wikipedia page][IOI].
+
+Full statistics is available on the [official IOI site][IOIprofile]:
+
+- Silver Medal in 2012 - Sirmione, Italy
+- Bronze Medal in 2011 - Pattaya, Thailand
+
+[IOIprofile]: http://stats.ioinformatics.org/people/2474
+[IOI]: http://en.wikipedia.org/wiki/International_Olympiad_in_Informatics
+            {{/subsection}}
+
+            {{#subsection name="TopCoder, CodeForces, Online Judges" extra="2010-2012" icon="bar-chart"}}
+![TopCoder logo](img/topcoder-logo.png)
+
+TopCoder and CodeForces are world's most competitive algorithmic platforms. I
+have been active in years of my high school getting high ranks in the first
+division, consistently for several years.
+
+- My TopCoder profile: <a class="topcoder" href="http://community.topcoder.com/tc?module=MemberProfile&cr=22907032">imslavko</a>.
+- My CodeForces profile: <a class="codeforces" href="http://codeforces.com/profile/imslavko">imslavko</a>.
+
+Repository with all solution files on different websites and online judges:
+[repo on GitHub](https://github.com/Slava/competitiveProgramming/) (hundreds of
+solved algorithmic problems).
+            {{/subsection}}
+            {{#subsection name="On-site competitions in Kazakhstan" extra="2009-2012" icon="bar-chart"}}
+For the 3 years of high school I have participated in 15 personal and team
+competitions, always achieving gold and silver medals. A list and a blog in
+Russian available
+[here](https://odscpp.wordpress.com/%D0%BC%D0%BE%D0%B8-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B/).
+
+Coached top 30 students from the whole country for two summers. Developed an
+online course with videos and problem sets in association with the "Daryn" -
+National Scientific Pedagogical Center.
+            {{/subsection}}
+          {{/section}}
+          {{#section id="talks" name="Recorded Talks"}}
+            {{#subsection name="Meteor Devshop Talks" icon="video-camera"}}
+- [Making Windows a first class Meteor development platform](https://www.youtube.com/watch?v=tNoJr_xLgSs) (with Sashko Stubailo)
+- [Meteor for Mobile](https://www.youtube.com/watch?v=4dJLPLWMImw) (with Matt Arbesfeld and Sashko Stubailo)
+- [What does it mean to be a realtime database?](https://www.youtube.com/watch?v=nEjIjJ3TC40)
+- [Don't get bitten by mungos (or Mongos)](https://www.youtube.com/watch?v=amaR4Aqe0s0)
+- [Experimental Redis Support](https://www.youtube.com/watch?v=-Vnb8tjnE3k)
+- [Profiling Blaze](https://www.youtube.com/watch?v=0pO96dEySF0)
+- [Meteor autocompletion for Sublime Text](https://www.youtube.com/watch?v=OxzdNZCxPjk), [Meteor autocompletion](https://www.youtube.com/watch?v=CcPZ56t8x4I)
+            {{/subsection}}
+            {{#subsection name="JSConf 2014" icon="video-camera"}}
+"Reactive Programming Made Simple". A talk on JSConf 2014 in Singapore about a
+subproject of Meteor called [Tracker](https://www.meteor.com/tracker). A video
+recording is available on
+[YouTube](https://www.youtube.com/watch?v=CjzZif7z9SE).
+            {{/subsection}}
+          {{/section}}
+        </dl>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
