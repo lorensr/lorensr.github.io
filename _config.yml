@@ -1,4 +1,4 @@
 name: "Loren's blog"
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: rogue
 permalink: /:title.html
