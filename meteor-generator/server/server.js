@@ -5,6 +5,7 @@ WebApp.connectHandlers.use(function (req, res) {
     var templates = [
       'index',
       'icon',
+      'emoji',
       'section',
       'subsection'
     ];
