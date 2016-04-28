@@ -1,4 +1,4 @@
 name: "Loren's blog"
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
 permalink: /:title.html
