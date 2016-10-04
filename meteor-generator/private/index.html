@@ -29,7 +29,7 @@
         a:hover { border-bottom-style: solid; color: black; }
         h2 > a { color: #333; border-bottom: none; }
         h2 > a:hover { color: #999; border-bottom: none; }
-        ul { margin: 0 0 32px 17px; }
+        ul { margin-left: 17px; }
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; margin-bottom: 50px; height: 15px; }
@@ -45,6 +45,9 @@
         #summary { padding-left: 80px }
         #summary .fa { font-size: 24px; width: 24px; }
         #summary p { line-height: 24px; }
+        .skills > ul { margin-top: 16px; margin-bottom: 16px; }
+        .location ul { margin-top: 16px; }
+        .location li.-previous { text-decoration: line-through; }
 
         @media (max-width: 450px) {
           #page-wrap { margin-left: 10px; margin-right: 10px; }
@@ -106,7 +109,8 @@
         </div>
         <div class="skills">
             {{#markdown}}
-- Full-stack web and mobile app developer
+*Full-stack web and mobile app developer*
+
 - UX design
 - Security
 - Web performance
@@ -117,8 +121,22 @@
   - Rusty: Rails, Ruby, Android Native, Java, C, Scheme, Haskell, PL/pgSQL
             {{/markdown}}
         </div>
+        <div class="location">
+          I currently live in:
+          <ul>
+            <li class="-previous">
+              Washington, DC
+            </li>
+            <li class="-previous">
+              San Francisco
+            </li>
+            <li>
+              NYC
+            </li>
+          </ul>
+        </div>
       </section>
-        <div class="clear"></div>
+      <div class="clear"></div>
         <dl>
           {{#section id="created" name="Created"}}
 
