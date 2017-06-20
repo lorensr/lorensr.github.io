@@ -64,9 +64,35 @@
           fill: #333;
         }
 
-        nav ul {
+        nav {
+            position: fixed;
+            left: calc((50% - 400px) / 2);
+        }
+
+        @media (max-width: 1000px) {
+            nav {
+                position: relative;
+                left: 60px;
+                margin: 50px 0;
+            }
+
+            nav > ul > li:first-child {
+                display: none;
+            }
+        }
+
+        nav > ul {
             list-style-type: none;
             margin-left: 0;
+
+        }
+
+        nav > ul > li:first-child {
+            margin-bottom: 15px;
+        }
+
+        nav > ul > li:not(:first-child) > a {
+            border-bottom: none;
         }
      </style>
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
