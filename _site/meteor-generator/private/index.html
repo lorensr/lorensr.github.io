@@ -1,0 +1,265 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <meta name="description" content="Loren Sands-Ramshaw – Software Developer">
+     <link rel="author" href="https://plus.google.com/+LorenSandsRamshaw">
+     <meta name="twitter:image" content="https:/lorensr.me/img/loren.png">
+
+     <title>Loren Sands-Ramshaw</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background-color: #fafafa; color: #333; }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic {
+          max-height: 260px; max-width: 200px;
+          border: 10px solid white;
+          -webkit-box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          -moz-box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          transform: rotate(-3deg);
+          box-shadow: 4px 4px 20px -4px rgba(0,0,0,0.75);
+          float: right; margin: -30px 0 0 0;
+        }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 36px; font-weight: 400; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        h2 > a { color: #333; border-bottom: none; }
+        h2 > a:hover { color: #999; border-bottom: none; }
+        ul { margin: 0 0 32px 17px; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; margin-bottom: 50px; height: 15px; }
+        dd + dd { margin-top: 20px; }
+        dl img:not(.emoji) {
+          float: right;
+          max-width: 100px;
+          max-height: 100px;
+          margin: 20px;
+        }
+        .vcard > p { margin: 20px 0; }
+        .emoji { width: 24px; height: 24px; vertical-align: text-bottom; }
+        #summary { padding-left: 80px }
+        #summary .fa { font-size: 24px; width: 24px; }
+        #summary p { line-height: 24px; }
+
+        @media (max-width: 450px) {
+          #page-wrap { margin-left: 10px; margin-right: 10px; }
+        }
+     </style>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15264607-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+     </script>
+</head>
+
+<body>
+    <div id="page-wrap">
+      <section id="summary">
+        <img src="img/loren.png" alt="Photo" id="pic" />
+        <div id="contact-info" class="vcard">
+            <h1 class="fn">Loren Sands-Ramshaw</h1>
+            <p>
+              {{> icon name="twitter"}}: <a href="https://twitter.com/lorendsr">lorendsr</a> <br />
+              {{> icon name="github"}}: <a href="https://github.com/lorensr">lorensr</a> <br />
+              {{> emoji name="love_letter"}}: <a href="mailto:lorensr+pub@gmail.com">lorensr@gmail.com</a> <br/>
+              {{> emoji name="pencil"}}: <a href="https://medium.com/@lorendsr">Blog</a> <br/>
+            </p>
+        </div>
+        <div class="skills">
+            {{#markdown}}
+- Full-stack web and mobile app developer
+- UX design
+- Security
+- Web performance
+- 60fps CSS animations and interactions
+- Tech:
+  - Favored: Meteor, Cordova, Coffeescript, MongoDB, Mocha
+  - Also: Node, ES6, Ionic, SQL, Backbone, Cucumber
+  - Learning: React, React Native, GraphQL, Ionic 2/Angular
+  - Rusty: Rails, Ruby, Android Native, Java, C, Scheme, Haskell, PL/pgSQL
+            {{/markdown}}
+        </div>
+      </section>
+        <div class="clear"></div>
+        <dl>
+          {{#section id="created" name="Created"}}
+
+            {{#subsection name="Parlay App" extra="2014-Present" emoji="facepunch"}}
+
+[![Parlay App](/img/parlay-icon.png)](http://parlaywith.me)
+
+Challenge your friends about anything.
+
+For money, bragging rights, or charitable donations.
+
+[parlaywith.me](http://parlaywith.me)
+
+            {{/subsection}}
+
+            {{#subsection name="Payo" extra="2013-Present" emoji="fork_and_knife"}}
+            
+[![Payo](/img/payo.png)](http://payo.us)
+
+Payo – Paleo Mayo: a healthy mayonnaise.
+
+Only virgin-oil mayo, lowest omega-6, free-range organic eggs.
+
+[payo.us](http://payo.us)
+
+            {{/subsection}}
+
+            {{#subsection name="Ferro" extra="2013" emoji="computer"}}
+
+[![Ferro](http://www.getferro.com/images/default.png)](http://getferro.com)
+
+Efficiency & accessibility Chrome extension providing a launcher / command line for the browser.
+
+[getferro.com](http://getferro.com)
+
+            {{/subsection}}
+ 
+          {{/section}}
+
+          {{#section id="opensource" name="Open Source"}}
+
+            {{#subsection name="meteor/guide" emoji="book" github=true}}
+
+Maintainer of the official Meteor Guide.
+
+            {{/subsection}}
+
+            {{#subsection name="lorensr/login-links" emoji="key" github=true}}
+
+Meteor package for adding magic autologin links, like Slack.
+
+            {{/subsection}}
+
+            {{#subsection name="lorensr/roles-restricted" emoji="closed_lock_with_key" github=true}}
+
+Meteor package for temporarily restricting a user's authorization.
+
+            {{/subsection}}
+
+            {{#subsection name="parlaywithme/meteor-synapsepay" emoji="moneybag" github=true}}
+
+Meteor package for making ACH transactions through SynapsePay.
+
+            {{/subsection}}
+
+            {{#subsection name="jamielob/reloader" emoji="iphone" github=true}}
+
+Meteor package for better hot code push updates for Cordova apps.
+
+            {{/subsection}}
+
+          {{/section}}
+
+          {{#section id="talks" name="Talks"}}
+
+            {{#subsection name="Crater Mobile Conference" extra="2016" emoji="movie_camera"}}
+            
+![Crater logo](https://crater.io/packages/telescope-theme-crater/lib/public/images/crater.png)
+
+TBD talk on Cordova
+
+            {{/subsection}}
+
+            {{#subsection name="Meteor Devshop Talks" emoji="movie_camera"}}
+
+[![Meteor logo](https://d14xs1qewsqjcd.cloudfront.net/assets/meteor-logo.png)](http://www.meetup.com/Meteor-SFBay/)
+
+- [Fixing Your Meteor App's Render Performance (NYC)](https://www.youtube.com/watch?v=r4VEfCWeCcg) – see also the [in-depth blog post](https://medium.com/parlay-engineering/fixing-your-meteor-app-s-render-performance-a727e918511c).
+- [starter-pack and DDP directory (SF)](https://www.youtube.com/watch?v=zNieoiFW_gw)
+
+            {{/subsection}}
+
+          {{/section}}
+
+          {{#section id="work" name="Past Work"}}
+
+            {{#subsection name="National Security Agency" extra="2010-2012" emoji="us"}}
+
+![NSA logo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/National_Security_Agency.svg/350px-National_Security_Agency.svg.png)
+
+Global Network Vulnerability Analyst
+
+- Developed apps with Rails, Backbone, and Android
+- Member of the Computer Network Operations Development Program
+- TS//SCI clearance
+
+            {{/subsection}}
+
+            {{#subsection name="Dartmouth College Computer Science" extra="2007-2009" emoji="school"}}
+
+[![Dartmouth logo](https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Dartmouth_College_shield.svg/300px-Dartmouth_College_shield.svg.png)](http://dartmouth.edu)
+
+- Assisted professors with teaching nine courses. 
+- Taught weekly sections of about ten students.
+- Held lab and office hours.
+
+            {{/subsection}}
+
+          {{/section}}
+
+          {{#section id="education" name="Education"}}
+
+            {{#subsection name="The Pragmatic Bookshelf" extra="2011-Present" emoji="book"}}
+
+[![The Pragmatic Programmer](https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg)](https://pragprog.com/)
+
+Technical reviewer.
+
+- Manage Your Project Portfolio
+- Seven Mobile Apps in Seven Weeks
+- Secure Your Node.js Web Application
+- Creating Great Teams
+- Seven Concurrency Models in Seven Weeks
+- HTML5 and CSS3
+- Mac Kung Fu
+- Learn to Program in Objective C
+- Seven Databases in Seven Weeks
+- The Rails View
+
+            {{/subsection}}
+
+            {{#subsection name="National Cryptologic School" extra="2010-2012" emoji="lock_with_ink_pen"}}
+
+![NSA logo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/National_Security_Agency.svg/350px-National_Security_Agency.svg.png)
+
+Coursework included network security, web application security, computer network operations, malware analysis, assembly language, network programming, C programming, Linux and Windows kernels, and cryptography.
+
+            {{/subsection}}
+
+
+            {{#subsection name="Dartmouth College" extra="2006-2010" emoji="mortar_board"}}
+
+[![Dartmouth logo](https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Dartmouth_College_shield.svg/300px-Dartmouth_College_shield.svg.png)](http://dartmouth.edu)
+
+Bachelor's in Computer Science, magna cum laude.
+
+Honors thesis: [Creating Large Disturbances in the Power Grid: Methods of Attack After Cyber Infiltration](http://www.cs.dartmouth.edu/reports/abstracts/TR2010-668/)
+
+Led co-ed fraternity and a cappella group.
+
+            {{/subsection}}
+
+          {{/section}}
+
+        </dl>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

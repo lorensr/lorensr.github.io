@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Individually Message Facebook Friends In Bulk</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+	  <!--<iframe frameborder="0" height="380" scrolling="no" src="http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo/widget/card.html" width="220"></iframe>-->
+
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Loren's blog</a></h1>
+            </div>
+
+                <nav class="posts top"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+<h2>Individually Message Facebook Friends In Bulk</h2>
+<p class="meta">21 Nov 2013</p>
+
+<div class="post">
+<p>UPDATE: As of April 2014, due to a change in the Facebook Graph API, the facebook-emails program no longer works. It will only output your friends who have used the Graph API Explorer, which is probably 0-1% of your full friend list! For more information, see the second item under “Permissions” here: https://developers.facebook.com/docs/graph-api/reference/v2.0/user/friends</p>
+
+<p>How to reach all your Facebook friends in an effective yet unobtrusive manner is a common problem. The usual solution is to create a group or event and invite all you friends to it. You’ve probably had a “Lost my digits” invite from a friend who has a new phone and lost their contact list. The limitation of this method is the short message (it has to be contained within the group or event title) and the fact that some people summarily ignore all group/event invites. While you can send a message to a group of people, you may run into a recipient limit, and you have all the problems of Facebook group messaging. The default is reply all, so everyone is notified when someone responds, which you almost always don’t want to happen, in particular with larger groups. You then get a situation in which people race to leave the conversation before they are annoyed with further notifications of other people leaving. Facebook tried to fix this problem with “muting” conversations, and while that does fix the notification problem, the conversation still keeps popping up as unread in your inbox.</p>
+
+<p>I wanted to find a way to send a short individual message to each of my Facebook friends in order to promote my <a href="http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo">Kickstarter campaign</a> for a healthy mayonnaise. I started with Facebook’s Chat API, and tried to use XMPP libraries in Ruby and Javascript to automate individual chat messages to my whole Facebook contact list. While it’s definitely possible, I was unable to get any of the libraries to work without modification, which I did not want to take the time to do. It next occurred to me that while you can’t use the Facebook API to retrieve the email addresses of your friends, you can use it to retrieve the usernames of your friends, and Facebook recently added support for sending messages through email, using the address [username]@facebook.com. So I wrote a short program that connected to the API, retrieved a list of usernames, and added “@facebook.com” to each. You can then paste the list into the bcc field of an email, and your email will appear as a direct individual message to each of your friends on Facebook. For full instructions, see the <a href="https://github.com/lorensr/facebook-emails">code repository</a>. This is my first package published to npm, and it is a pleasantly simple process.</p>
+
+<p>One word of warning: bothering people can cause them to defriend you. I lost 72 friends to <a href="http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo">Payo</a>:</p>
+
+<pre><code>$ wc -l before after
+    1891 before
+    1819 after
+</code></pre>
+
+</div>
+<nav class="posts bottom"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Loren Sands-Ramshaw<br />
+                  Programmer
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/lorensr/">Github</a><br />
+                  <a href="http://twitter.com/lorendsr/">Twitter</a><br />
+		  <a rel="author" href="https://plus.google.com/u/2/114506697163467499020?rel=author">Google+</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15264607-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    </body>
+</html>

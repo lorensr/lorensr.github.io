@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Improved Currying In Javascript</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+	  <!--<iframe frameborder="0" height="380" scrolling="no" src="http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo/widget/card.html" width="220"></iframe>-->
+
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Loren's blog</a></h1>
+            </div>
+
+                <nav class="posts top"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+<h2>Improved Currying In Javascript</h2>
+<p class="meta">09 Nov 2013</p>
+
+<div class="post">
+<p>Currying, or partial function application, is explained <a href="http://ejohn.org/blog/partial-functions-in-javascript/">here</a> by Resig. He gives the following implementation:</p>
+
+<pre><code>Function.prototype.partial = function(){
+    var fn = this, args = Array.prototype.slice.call(arguments);
+    return function(){
+      var arg = 0;
+      for ( var i = 0; i &lt; args.length &amp;&amp; arg &lt; arguments.length; i++ )
+        if ( args[i] === undefined )
+          args[i] = arguments[arg++];
+      return fn.apply(this, args);
+    };
+  };
+</code></pre>
+
+<p>This method saves all arguments, including the final arguments, which is usually not the desired behavior. Consider:</p>
+
+<pre><code>add = (a,b) -&gt;
+  a + b
+addOne = add.partial 1, undefined
+
+&gt; addOne(2)
+3
+&gt; addOne(10)
+3
+</code></pre>
+
+<p>The 2 is saved as the second argument, so the 10 is ignored in the second invocation of <code>addOne</code>. The solution is to use a copy of <code>args</code> in the inner function (<code>slice()</code> makes a copy of an array):</p>
+
+<pre><code>Function.prototype.partial = -&gt;
+  fn = @
+  args_original = Array.prototype.slice.call arguments
+  -&gt;
+    args = args_original.slice()
+    arg = 0
+    i = 0
+    while i &lt; args.length &amp;&amp; arg &lt; arguments.length
+      if args[i] is undefined
+        args[i] = arguments[arg++]
+      i++
+    fn.apply @, args
+</code></pre>
+
+<p>Now the second call to <code>addOne</code> will return 11 as intended. </p>
+
+</div>
+<nav class="posts bottom"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Loren Sands-Ramshaw<br />
+                  Programmer
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/lorensr/">Github</a><br />
+                  <a href="http://twitter.com/lorendsr/">Twitter</a><br />
+		  <a rel="author" href="https://plus.google.com/u/2/114506697163467499020?rel=author">Google+</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15264607-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    </body>
+</html>

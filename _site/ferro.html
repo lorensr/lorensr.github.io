@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ferro</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+	  <!--<iframe frameborder="0" height="380" scrolling="no" src="http://www.kickstarter.com/projects/lorensr/payo-paleo-mayo/widget/card.html" width="220"></iframe>-->
+
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Loren's blog</a></h1>
+            </div>
+
+                <nav class="posts top"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+<h2>Ferro</h2>
+<p class="meta">23 Aug 2013</p>
+
+<div class="post">
+<p>I released Ferro today. It is my second extension to Google Chrome. Check it out at <a href="http://www.getferro.com" target="_blank">getferro.com</a>.</p>
+
+<p>I started work on it soon after I wrote my <a href="quick-options.html">first extension</a> in March of 2011. I read a couple books on Javascript and soon after discovered Coffeescript, which I greatly prefer. At the same time, I found Backbone and decided to try using it for the options page. In hindsight, it would have been useful for the main popup UI as well. Almost exactly a year ago I resigned from the job I had had since college, leaving me with much more time to work on Ferro and my company, Orglist (sign up for the beta list at <a href="http://signup.orglist.org">orglist.org</a>). Another factor that aided development was Chrome’s release of the keyboard shortcut API, which allowed me to remove the content scripts. I previously used content scripts in every page to listen for keyboard shortcuts and render the UI, which was particularly complicated because content scripts have no direct access to the extension’s data and Chrome API. </p>
+
+<p>There are a couple things in Ferro that are novel, at least in my experience. The first is that some commands are allowed to appear in the first section of the launcher. In Ferro, there are commands that can take the current tab as an argument, such as “Pin”, and commands that don’t take an argument, such as “Reload All Tabs.” The second possibly-novel aspect is the manner in which donations work. The user is presented with the amount of their donation left after credit card processing fees, incentivising the Bitcoin donation option. There are also two lists of previous donations: a full list at <a href="http://donate.getferro.com">donate.getferro.com</a>, which is sorted by amount, incentivising large donations, and the most recent five donations, located on the bottom-right of the extension options page, incentivising frequent donations. The donor name field in the latter in particular could be used as an ad channel, if someone’s target audience was efficiency experts who opened their Ferro options page often to view their saved sessions or the command list. But I doubt I’ll be receiving many donations, and if it were to ever get out of hand I could always raise the minimum donation and/or manually approve donation records before they were displayed.</p>
+
+<p>The code is fairly rough, since it was my first substantial JS project at the time I started. I ingrained early the custom compilation system and lack of a class system, and I didn’t take the time later on to change these and some other aspects. If I thought that many people would contribute, I might clean it up, but as it is, it works, and my priority is Orglist. That being said, I will maintain it. I will fix bugs and add commands when new API functions are released. I will respond to and categorize issues and review and merge pull requests. And I think I will continue to do so for a good while, because I use Ferro myself and want it to continue being useful to others. It always saddens me when I find an open source project that I want to use, but then I find that there are many outstanding issues and the repo owner is AWOL.</p>
+
+
+</div>
+<nav class="posts bottom"><a href="http://lorensr.me">&#x2190; All Posts</a></nav>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Loren Sands-Ramshaw<br />
+                  Programmer
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/lorensr/">Github</a><br />
+                  <a href="http://twitter.com/lorendsr/">Twitter</a><br />
+		  <a rel="author" href="https://plus.google.com/u/2/114506697163467499020?rel=author">Google+</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15264607-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    </body>
+</html>
