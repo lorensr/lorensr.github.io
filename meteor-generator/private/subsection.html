@@ -1,7 +1,11 @@
 <dd>
-  <h2>{{> icon name=icon}} {{> emoji name=emoji}} {{#if github}}<a href="https://github.com/{{name}}">{{name}}</a>{{else}}{{name}}{{/if}} <span>{{#if extraIcon}}{{> icon name=extraIcon}}{{/if}} {{extra}}</span></h2>
-  {{#markdown}}
-    {{> Template.contentBlock}}
-  {{/markdown}}
+  <h2>
+    {{> icon name=icon}} {{> emoji name=emoji}} {{#if github}}<a href="https://github.com/{{name}}">{{name}}</a>{{else}}{{name}}{{/if}} <span>{{#if extraIcon}}{{> icon name=extraIcon}}{{/if}} {{extra}}</span>
+  </h2>
+  <div class="{{class}}">
+    {{#markdown}}
+      {{> Template.contentBlock}}
+    {{/markdown}}
+  </div>
 </dd>
 

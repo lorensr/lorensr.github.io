@@ -94,6 +94,13 @@
         nav > ul > li:not(:first-child) > a {
             border-bottom: none;
         }
+
+        .light-img img, 
+        .light-img svg {
+          background-color: #c0c0c0;
+          padding: 5px;
+          border-radius: 5px;
+        }
      </style>
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <script type="text/javascript">
@@ -402,7 +409,7 @@ Meteor package for better hot code push updates for Cordova apps
           
           {{#section id="talks" name="Talks"}}
 
-            {{#subsection name="JNation" extra="2022" emoji="movie_camera"}}
+            {{#subsection name="JNation" extra="2022" emoji="movie_camera" class="light-img"}}
 
 [![JNation logo](/img/jnation_white.png)](https://jnation.pt/)
 
@@ -420,7 +427,7 @@ Building Reliable Distributed Systems
 
             {{/subsection}}
           
-            {{#subsection name="TS Congress" extra="2022" emoji="movie_camera"}}
+            {{#subsection name="TS Congress" extra="2022" emoji="movie_camera" class="light-img"}}
 
 [![TS Congress logo](/img/ts-congress.svg)](https://typescriptcongress.com/)
 
