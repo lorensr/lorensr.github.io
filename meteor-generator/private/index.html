@@ -172,14 +172,17 @@
         </div>
         <div class="skills">
             {{#markdown}}
-Full-stack web and mobile app developer specializing in:
+Software engineer specializing in:
 
+- Temporal
+- Full-stack web and mobile app dev
 - GraphQL
 - Security
 - Web performance, including 60 FPS CSS animations and interactions
 - UX design
+- DX design
 - Tech:
-  - GraphQL, Apollo, Node, React, React Native, Next.js, Gatsby, SQL, MongoDB, Cypress, Meteor, Cordova
+  - Temporal, Node, React, React Native, Next.js, tRPC, Apollo, Gatsby, SQL, MongoDB, Cypress, Meteor, Cordova
   - Rusty: Rails, Ruby, CoffeeScript, Android, Java, C, Scheme, Haskell, PL/pgSQL, Backbone, Cucumber, Blaze
             {{/markdown}}
         </div>
@@ -202,15 +205,15 @@ Full-stack web and mobile app developer specializing in:
         <dl>
           {{#section id="created" name="Created"}}
 
-            {{#subsection name="Temporal TypeScript SDK" extra="2021-present" emoji="computer"}}
+            {{#subsection name="Temporal TypeScript SDK" extra="2021-2022" emoji="computer"}}
 
 <a href="https://temporal.io/">
   <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg"><path d="M789.796 410.694C764.208 219.009 699.452 59 599.99 59c-99.462 0-164.218 160.009-189.806 351.694C218.499 436.282 58.49 501.038 58.49 600.5c0 99.462 160.037 164.218 351.694 189.805C435.772 981.963 500.528 1142 599.99 1142c99.462 0 164.218-160.037 189.806-351.695 191.685-25.587 351.694-90.343 351.694-189.805S981.453 436.282 789.796 410.694ZM403.928 734.472C220.351 707.958 113.285 647.271 113.285 600.5c0-46.771 107.066-107.458 290.643-133.972-4.04 44.19-6.145 89.305-6.145 133.972s2.105 89.81 6.145 133.972ZM599.99 113.795c46.771 0 107.458 107.066 133.972 290.643-44.162-4.04-89.305-6.145-133.972-6.145s-89.81 2.105-133.972 6.145c26.514-183.577 87.201-290.643 133.972-290.643Zm196.062 620.677c-9.034 1.319-46.097 5.668-55.468 6.593-.926 9.399-5.303 46.435-6.594 55.469-26.514 183.577-87.201 290.643-133.972 290.643-46.771 0-107.458-107.066-133.972-290.643-1.291-9.034-5.668-46.097-6.593-55.469-4.265-43.516-6.846-90.259-6.846-140.565s2.581-97.049 6.846-140.594c43.516-4.264 90.259-6.846 140.565-6.846s97.049 2.582 140.566 6.846c9.399.926 46.434 5.303 55.468 6.594 183.577 26.514 290.671 87.229 290.671 133.972 0 46.743-107.094 107.486-290.671 134Z" fill="#141414"/></svg>
 </a>
 
-The best way to write reliable code in Node. (See my [intro to Temporal](https://www.youtube.com/watch?v=fZHL1k5iEmA).)
+The best way to write reliable code in Node. (See my [intro to Temporal](https://x.com/lorendsr/status/1789083956169613776).)
 
-[temporal.io/ts](https://temporal.io/ts)
+[temporal.io](https://temporal.io)
 
             {{/subsection}}
 
@@ -265,6 +268,38 @@ Efficiency & accessibility Chrome extension providing a launcher / command line 
 
           {{#section id="writing" name="Writing"}}
 
+          {{#subsection name="Building Reliable Applications with Durable Execution" extra="2024" emoji="black_nib"}}
+
+Intro to durable execution in Node.
+
+[temporal.io](https://assets.temporal.io/durable-execution.pdf)
+          
+          {{/subsection}}
+
+          {{#subsection name="Time-Travel Debugging Production Code" extra="2023" emoji="black_nib"}}
+
+Overview of time-travel debugging (what it is, its history, how it’s implemented) and how it relates to debugging your production code.
+
+[temporal.io/blog](https://temporal.io/blog/time-travel-debugging-production-code)
+          
+          {{/subsection}}
+
+          {{#subsection name="Sync GitHub Repos to Notion with Temporal Schedules" extra="2023" emoji="black_nib"}}
+
+An internal tool that syncs your GitHub org’s list of repositories to a Notion database.
+
+[temporal.io/blog](https://temporal.io/blog/sync-github-repos-to-notion-with-temporal-schedules)
+          
+          {{/subsection}}
+
+          {{#subsection name="How Durable Execution Works" extra="2023" emoji="black_nib"}}
+
+How durable execution works under the hood.
+
+[temporal.io/blog](https://temporal.io/blog/building-reliable-distributed-systems-in-node-js-part-2)
+          
+          {{/subsection}}
+          
           {{#subsection name="When to use gRPC vs GraphQL" extra="2022" emoji="black_nib"}}
 
 Goes deep into the differences between them and recommendeds when to use each.
@@ -352,6 +387,11 @@ TS SDK for [Temporal](https://temporal.io)
                       
             {{/subsection}}
 
+            {{#subsection name="temporalio/samples-typescript" emoji="computer" github=true}}
+
+Sample applications for the [Temporal TypeScript SDK](https://t.mp/ts)
+                      
+            {{/subsection}}
           
             {{#subsection name="GraphQLGuide/guide" emoji="book" github=true}}
 
@@ -417,17 +457,70 @@ Meteor package for better hot code push updates for Cordova apps
           
           {{#section id="podcasts" name="Podcasts"}}
           
+            {{#subsection name="Modern Web" extra="2024" emoji="studio_microphone"}}
+            
+[It's Impossible for this Code to Fail](https://youtu.be/xmXFgEqCups)
+            
+            {{/subsection}}
+
+            {{#subsection name="Apache Cassandra Corner" extra="2024" emoji="studio_microphone"}}
+            
+[Loren Sands-Ramshaw](https://youtu.be/10lNP4ipA-M)
+            
+            {{/subsection}}
+
             {{#subsection name="Front End Happy Hour" extra="2021" emoji="studio_microphone"}}
             
 [![FEHH logo](https://www.frontendhappyhour.com/public/img/front-end-happy-hour.svg?v2)](https://www.frontendhappyhour.com/)
 
-[Crafting your cocktail mixture to learning](Crafting your cocktail mixture to learning)
+[Crafting your cocktail mixture to learning](https://www.frontendhappyhour.com/episodes/crafting-your-cocktail-mixture-to-learning/)
             
             {{/subsection}}
           
           {{/section}}
           
           {{#section id="talks" name="Talks"}}
+
+            {{#subsection name="PyTexas" extra="2024" emoji="movie_camera" class="light-img"}}
+
+[![PyTexas logo](/img/pytexas.png)](https://www.pytexas.org/conference/)
+
+[System Design on Easy Mode](https://www.youtube.com/watch?v=AulAm5BtMXw&list=PL0MRiRrXAvRjMAfx42eiokiAmfclUX-6S&index=15) (34 min)
+
+            {{/subsection}}          
+
+          
+            {{#subsection name="Cassandra Summit" extra="2023" emoji="movie_camera" class="light-img"}}
+
+[![Cassandra Summit logo](/img/cassandra-summit.svg)](https://events.linuxfoundation.org/cassandra-summit/)
+
+[Code That Can't Fail](https://youtu.be/dIbPdwvQb10) (18 min)
+
+            {{/subsection}}          
+
+            {{#subsection name="All Things Open" extra="2023" emoji="movie_camera" class="light-img"}}
+
+[![All Things Open logo](/img/ato.svg)](https://2023.allthingsopen.org/)
+
+[System Design on Easy Mode](https://www.youtube.com/watch?v=f1CN6tuPkfk&list=PL6kQg8bP1Ji6fjHgdmf05lLe8Er9RLM8F&index=12) (40 min)
+
+            {{/subsection}}
+
+            {{#subsection name="LibertyJS" extra="2023" emoji="movie_camera" class="light-img"}}
+
+[![LibertyJS logo](/img/libertyjs.jpg)](https://libertyjs.com/)
+
+How to build distributed systems in JavaScript
+
+            {{/subsection}}          
+
+            {{#subsection name="DataStax" extra="2023" emoji="movie_camera" class="light-img"}}
+
+[![DataStax logo](/img/datastax.png)](https://www.datastax.com/)
+
+[Building invincible applications with Temporal + Astra DB](https://youtu.be/Vr0IJS7Ll64)
+
+            {{/subsection}}          
 
             {{#subsection name="JNation" extra="2022" emoji="movie_camera" class="light-img"}}
 
@@ -509,7 +602,7 @@ See also the [in-depth blog post](https://medium.com/parlay-engineering/fixing-y
 
           {{#section id="work" name="Work"}}
 
-          {{#subsection name="Temporal" extra="2022–Present" emoji="floppy_disk"}}
+          {{#subsection name="Temporal" extra="2022–2024" emoji="floppy_disk"}}
 
 *Developer Relations Engineer*
           
@@ -559,7 +652,7 @@ Built, fixed, added features to, or added testing for web and mobile apps.
 
           {{#section id="education" name="Education"}}
 
-            {{#subsection name="The Pragmatic Bookshelf" extra="2011–Present" emoji="book"}}
+            {{#subsection name="The Pragmatic Bookshelf" extra="2011–2015" emoji="book"}}
 
 [![The Pragmatic Programmer](https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg)](https://pragprog.com/)
 
